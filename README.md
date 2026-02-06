@@ -27,6 +27,6 @@ Sweeetalert2   | JS          |  [Sweeetalert2](https://sweetalert2.github.io/)
 Animate        |CSS-ANIMAÇÃO |  [Animate](https://daneden.github.io/animate.css/)
 W3school       | Plataforma de Conhecimento |  [W3school](https://www.w3schools.com/)
 Icon8          | Plataforma de Icones | [Icons8](https://icons8.com.br/icons)
-Trello         | Plataforma de Organização do Projeto | [Projeto TCC (TIpsTech)]((https://trello.com/b/3X7Tl0Up/tcc-tipstech))
+Trello         | Plataforma de Organização do Projeto | [Projeto TCC (TIpsTech)](https://trello.com/b/3X7Tl0Up/tcc-tipstech)
 
 ## Apresentação do Trabalho de Conclusão de Curso em Tecnologia em Sistemas Para Internet:
