@@ -1,6 +1,295 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Teste de Página</h1>
-  <p>Esta é uma página de teste para verificar se o sistema de templates do Django está funcionando corretamente.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empresa de TI</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:#0F1010;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0066ff;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+}
+
+.btn{
+    background:#0066ff;
+    color:white;
+    padding:12px 24px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:120px 20px 60px;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-bottom:30px;
+}
+
+.stats{
+    padding:80px 20px;
+    background:#0F1010;
+}
+
+.stats-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#0066ff;
+    font-size:42px;
+}
+
+.services{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.about{
+    background:#0f172a;
+    color:white;
+    padding:100px 20px;
+}
+
+.contact{
+    padding:100px 20px;
+}
+
+form{
+    display:grid;
+    gap:15px;
+    max-width:700px;
+}
+
+input,textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero-content{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .menu{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">TIpsTech</div>
+
+        <nav class="menu">
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <a href="#" class="btn">Orçamento</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div>
+            <h1>Soluções de TI para sua Empresa</h1>
+            <p>Suporte, infraestrutura e desenvolvimento para impulsionar seu negócio.</p>
+            <a href="#" class="btn">Fale Conosco</a>
+        </div>
+
+        <img src="https://via.placeholder.com/600x400"
+             alt="TI"
+             style="width:100%;border-radius:20px;">
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stats-grid">
+        <div class="stat">
+            <h3>10k+</h3>
+            <p>Chamados Resolvidos</p>
+        </div>
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Clientes Satisfeitos</p>
+        </div>
+        <div class="stat">
+            <h3>1500</h3>
+            <p>Projetos</p>
+        </div>
+        <div class="stat">
+            <h3>10+</h3>
+            <p>Anos de Experiência</p>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Suporte de TI</h3>
+                <p>Atendimento remoto e presencial.</p>
+            </div>
+
+            <div class="card">
+                <h3>Infraestrutura</h3>
+                <p>Redes, servidores e cloud.</p>
+            </div>
+
+            <div class="card">
+                <h3>Software</h3>
+                <p>Desenvolvimento sob medida.</p>
+            </div>
+
+            <div class="card">
+                <h3>Gerenciamento</h3>
+                <p>Monitoramento e gestão completa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>
+            Somos especialistas em tecnologia e ajudamos empresas
+            a crescer com soluções modernas e seguras.
+        </p>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Sugestão ou comentário:</h2>
+
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="Empresa">
+            <textarea rows="5" placeholder="Mensagem"></textarea>
+            <button class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 TIpsTech - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
 {% endblock %}

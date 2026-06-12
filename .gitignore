@@ -1,0 +1,33 @@
+# Ambiente virtual
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Variáveis de ambiente
+.env
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# arquivo criado para teste
+testedb.py
