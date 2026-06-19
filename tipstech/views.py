@@ -5,6 +5,10 @@ from django.http import HttpResponse, JsonResponse
 from .models import Comentarios
 from .forms import adicionarComentario
 from django.utils.dateformat import format
+from django.http import JsonResponse
+from .models import Comentarios
+from django.utils import timezone
+from zoneinfo import ZoneInfo
 
 def home(request):
     return render(request, 'home.html')
@@ -65,8 +69,6 @@ def ok(request):
         if form.is_valid():
 
             nome = form.cleaned_data['nome']
-
-            # 🔥 conta comentários desse nome
             total = Comentarios.objects.filter(nome=nome).count()
 
             if total >= 3:
@@ -93,18 +95,20 @@ def listar_comentarios(request):
     comentarios = []
 
     for c in Comentarios.objects.all().order_by('-id'):
+        data_brasil = timezone.localtime(
+            c.data_da_postagem,
+            ZoneInfo("America/Fortaleza")
+        )
+
         comentarios.append({
             'id': c.id,
             'nome': c.nome,
             'comentado': c.comentado,
             'qtd_likes': c.qtd_likes,
-            'data_da_postagem': format(c.data_da_postagem, 'd/m/Y H:i')
+            'data_da_postagem': data_brasil.strftime('%d/%m/%Y %H:%M')
         })
 
     return JsonResponse(comentarios, safe=False)
-
-from django.http import JsonResponse
-from .models import Comentarios
 
 def curtir_comentario(request, id):
     comentario = Comentarios.objects.get(id=id)
