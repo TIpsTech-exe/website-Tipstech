@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+<style>
+  .underlineLinksServicos {
+       text-decoration: underline 5px #0066FF;  
+      }
+</style>
+<div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+  <p class="h1">Serviços</p>
+</div>
+<div class="container-fluid pt-3">
+  <div class="container text-center">
+    <div class="row center">
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+            <img src="{% static 'img/Serviços/1.png' %}" class="card-img-top rounded-4" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Formatação de Computadores</h5>
+                <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">Solicitar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/7.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Criação de Aplicativos Android</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco" >
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/9.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Criação de Sites</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/6.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Montagem de Computador</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+            <img src="{% static 'img/Serviços/3.png' %}" class="card-img-top rounded-4" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Criação de Currículo</h5>
+                <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">Solicitar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/5.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Recuperação de Arquivos Deletados</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco" >
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/4.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Edição de Trabalhos Acadêmicos</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/Serviços/2.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Instalação de Programas</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn btn-primary">solicitar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex justify-content-center animacao bloco">
+        <div class="card rounded-4 shadow" style="width: 15rem;">
+          <img src="{% static 'img/1.png' %}" class="card-img-top rounded-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Solicitar Outro Serviço de Informática</h5>
+            <a href="https://wa.me/message/E7QHNLC3WXNIE1" class="btn corWhats ">solicitar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

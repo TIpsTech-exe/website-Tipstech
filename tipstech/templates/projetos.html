@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+<style>
+    .underlineLinksProjetos {
+         text-decoration: underline 5px rgb(52, 199, 89);  
+        }
+</style>
+<div class="bg-grandiente pt-2 pb-5 mb-0 p-lg-o">
+  <div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+    <p class="h1">SIGICOP</p>
+  </div>
+  <div class="card container animacao">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'img/SIGICop.gif' %}" class="img-fluid rounded-start mb-5" alt="...">
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Categoria</th>
+            <th>Referências</th>
+            <th>Link</th>
+          </tr>
+        
+          <tr>
+            <td>Linguagem de Programação</td>
+            <td>Java</td>
+            <td><a href="https://www.java.com/pt-BR/download/?locale=pt_BR">Link</a></td>
+          </tr>
+        
+          <tr>
+            <td>Framework de Desenvolvimento</td>
+            <td>Play Framework</td>
+            <td><a href="https://www.playframework.com/documentation/1.4.x/home">Link</a></td>
+          </tr>
+          <tr>
+            <td>Banco de Dados</td>
+            <td>MySQL</td>
+            <td><a href="https://www.mysql.com/products/workbench/">Link</a></td>
+          </tr>
+          <tr>
+            <td>CSS Framework</td>
+            <td>bootstrap</td>
+            <td><a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Link</a></td>
+          </tr>
+          <tr>
+            <td>JS Framework</td>
+            <td>Sweeetalert2</td>
+            <td><a href="https://sweetalert2.github.io/">Link</a></td>
+          </tr>
+          <tr>
+            <td>Organização</td>
+            <td>Trello</td>
+            <td><a href="https://trello.com/b/bKk0fVbE/projeto-tcc-sigicop">Link</a></td>
+          </tr>
+      </table>
+      <div class="text-end">
+        <a href="https://github.com/mpsps/SIGICOP"
+                         target="_blank"
+                         class="text-white text-decoration-none">
+                         <span class="card-text"><small class="text-body-secondary">Last updated 5 years ago</small></span>
+                         <img src="{% static 'img/github.png' %}"  class="img-fluid" alt="Logo">
+                      </a>
+        </div>
+        <div class="bg-grandiente mt-2">.</div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">O SIGICOP (Sistema de Gerenciamento de Cópias e Impressões) é um projeto de conclusão do Curso Técnico Subsequente em Informática, 
+            desenvolvido por Magdiel Pereira de Souza e Manacio Pereira de Souza.
+          </p>
+          <p class="card-text">
+            O sistema foi concebido com o objetivo de otimizar e agilizar o processo de solicitação de cópias e impressões no IFRN – Campus João Câmara. Por meio da 
+            plataforma, os usuários podem acompanhar e controlar a quantidade de solicitações disponíveis, enquanto os administradores têm acesso a ferramentas para 
+            gerenciar, monitorar e organizar todas as requisições realizadas.
+            </p>
+            <p class="card-text">
+            Dessa forma, o SIGICOP contribui para a melhoria da gestão dos serviços de impressão e cópia, promovendo maior eficiência, transparência e praticidade 
+            para a comunidade acadêmica.
+            
+            <h2 class="text-center">Diagrama de Caso de Uso do Usuário</h2>
+            <img src="{% static 'img/casoDeUso.jpg' %}" class="rounded mx-auto d-block img-fluid w-75" alt="...">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+    <p class="h1">Map-Cep</p>
+  </div>
+  <div class="card container animacao bloco" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'img/mapceplogo.png' %}"
+     class="img-fluid rounded-start mb-5 d-block mx-auto mt-5 w-50"
+     alt="Logo">
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Categoria</th>
+            <th>Referências</th>
+            <th>Link</th>
+          </tr>
+        
+          <tr>
+            <td>Linguagem de Programação</td>
+            <td>Dart</td>
+            <td><a href="https://dart.dev/">Link</a></td>
+          </tr>
+        
+          <tr>
+            <td>Framework de Desenvolvimento</td>
+            <td>Flutter</td>
+            <td><a href="https://docs.flutter.dev/">Link</a></td>
+          </tr>
+      </table>
+      <div class="text-end">
+        <a href="https://github.com/mpsps/map_cep"
+                         target="_blank"
+                         class="text-white text-decoration-none">
+                         <span class="card-text"><small class="text-body-secondary">Last years</small></span>
+                         <img src="{% static 'img/github.png' %}"  class="img-fluid" alt="Logo">
+                      </a>
+        </div>
+        <div class="bg-grandiente mt-2">.</div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">
+           MAPCEP é uma aplicação desenvolvida para consulta de CEPs, fornecendo informações detalhadas de endereço e sua respectiva geolocalização. 
+           Por meio da integração com serviços de mapas, o sistema exibe a localização do CEP pesquisado em tempo real, oferecendo uma experiência 
+           intuitiva e eficiente para os usuários.
+          </p>
+            <p class="card-text">
+            <h2 class="text-center">Tela Inicial de Map-cep</h2>
+            <img src="{% static 'img/mpce.png' %}" class="rounded mx-auto d-block img-fluid w-25" alt="...">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+    <p class="h1">Diário Estóico</p>
+  </div>
+  <div class="card container animacao bloco">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'img/de.png' %}"
+     class="img-fluid rounded-start mb-5 d-block mx-auto mt-2 w-50"
+     alt="Logo">
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Categoria</th>
+            <th>Referências</th>
+            <th>Link</th>
+          </tr>
+        
+          <tr>
+            <td>Linguagem de Programação</td>
+            <td>Dart</td>
+            <td><a href="https://dart.dev/">Link</a></td>
+          </tr>
+        
+          <tr>
+            <td>Framework de Desenvolvimento</td>
+            <td>Flutter</td>
+            <td><a href="https://docs.flutter.dev/">Link</a></td>
+          </tr>
+      </table>
+      <div class="text-end">
+        <a href="https://github.com/mpsps/Diario-Estoico"
+                         target="_blank"
+                         class="text-white text-decoration-none">
+                         <span class="card-text"><small class="text-body-secondary">Last years</small></span>
+                         <img src="{% static 'img/github.png' %}"  class="img-fluid" alt="Logo">
+                      </a>
+        </div>
+        <div class="bg-grandiente mt-2">.</div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">
+           MAPCEP é uma aplicação desenvolvida para consulta de CEPs, fornecendo informações detalhadas de endereço e sua respectiva geolocalização. 
+           Por meio da integração com serviços de mapas, o sistema exibe a localização do CEP pesquisado em tempo real, oferecendo uma experiência 
+           intuitiva e eficiente para os usuários.
+          </p>
+            <p class="card-text">
+            <h2 class="text-center">Tela Inicial de Diário Estóico</h2>
+            <img src="{% static 'img/estce.png' %}" class="rounded mx-auto d-block img-fluid w-25" alt="...">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-black p-5 text-white play-regular text-center">
+  <p class="h1 p-lg-5 mt-sm-5">Participações Em Outros Projetos</p>
+</div>
+<div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+  <p class="h1">Yuri Exclusive</p>
+</div>
+<div class="pt-2 pb-5 mb-0 p-lg-o">
+  <div class="card container animacao bloco" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'img/YuriExClu.png' %}"
+     class="img-fluid rounded-start mb-5 d-block mx-auto mt-2 w-50"
+     alt="Logo">
+     <table class="table table-bordered table-striped">
+      <tr>
+        <th>Categoria</th>
+        <th>Referências</th>
+        <th>Link</th>
+      </tr>
+    
+      <tr>
+        <td>Linguagem de Programação</td>
+        <td>Python</td>
+        <td><a href="https://docs.python.org/3/">Link</a></td>
+      </tr>
+    
+      <tr>
+        <td>Framework de Desenvolvimento</td>
+        <td>Django</td>
+        <td><a href="https://docs.djangoproject.com/en/6.0/">Link</a></td>
+      </tr>
+      <tr>
+        <td>Banco de Dados</td>
+        <td>Sqlite</td>
+        <td><a href="https://sqlite.org/index.html">Link</a></td>
+      </tr>
+      <tr>
+        <td>CSS Framework</td>
+        <td>bootstrap</td>
+        <td><a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Link</a></td>
+      </tr>
+  </table>
+      <div class="text-end">
+        <a href="https://github.com/DamiaoNetto/Projeto_Integrador"
+                         target="_blank"
+                         class="text-white text-decoration-none">
+                         <span class="card-text"><small class="text-body-secondary">2 years ago</small></span>
+                         <img src="{% static 'img/github.png' %}"  class="img-fluid" alt="Logo">
+                      </a>
+        </div>
+        <div class="bg-grandiente mt-2">.</div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">
+            Sistema web desenvolvido para Yuri Transporte Executivo, permitindo que clientes realizem agendamentos de corridas com praticidade, 
+            visualizando trajetos e preços fixos. O sistema também conta com uma área exclusiva para o motorista gerenciar os agendamentos, além de uma interface
+             simples e intuitiva para facilitar a experiência do usuário.
+          </p>
+            <p class="card-text">
+            <h2 class="text-center">Tela Inicial de Yury Exclusive</h2>
+            <img src="{% static 'img/image.png' %}" class="rounded mx-auto d-block img-fluid w-25" alt="...">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+    <p class="h1">Smart Space Parking</p>
+  </div>
+  <div class="card container animacao bloco" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'img/smart.png' %}"
+     class="img-fluid rounded-start mb-5 d-block mx-auto mt-2 w-50"
+     alt="Logo">
+     <table class="table table-bordered table-striped">
+      <tr>
+        <th>Categoria</th>
+        <th>Referências</th>
+        <th>Link</th>
+      </tr>
+    
+      <tr>
+        <td>Linguagem de Programação</td>
+        <td>Python</td>
+        <td><a href="https://docs.python.org/3/">Link</a></td>
+      </tr>
+    
+      <tr>
+        <td>Framework de Desenvolvimento</td>
+        <td>Django</td>
+        <td><a href="https://docs.djangoproject.com/en/6.0/">Link</a></td>
+      </tr>
+      <tr>
+        <td>Banco de Dados</td>
+        <td>Sqlite</td>
+        <td><a href="https://sqlite.org/index.html">Link</a></td>
+      </tr>
+      <tr>
+        <td>CSS Framework</td>
+        <td>bootstrap</td>
+        <td><a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Link</a></td>
+      </tr>
+  </table>
+      <div class="text-end">
+        <a href="https://gitlab.com/projeto-integrador-ii1/smart-space-parking"
+                         target="_blank"
+                         class="text-white text-decoration-none">
+                         <span class="card-text"><small class="text-body-secondary">9 months ago</small></span>
+                         <img src="{% static 'img/gitlab.png' %}"  class="img-fluid" alt="Logo">
+                      </a>
+        </div>
+        <div class="bg-grandiente mt-2">.</div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">
+            Sistema de monitoramento de vagas de estacionamento utilizando Internet das Coisas (IoT), que exibe em tempo real a ocupação das vagas por
+             meio de um aplicativo desenvolvido em Flutter. O projeto visa otimizar a mobilidade no IFRN Campus Natal Central e reduzir o tempo de busca
+              por estacionamento.
+
+          </p>
+            <p class="card-text">
+            <h2 class="text-center">Tela Inicial de Smart Space Parking</h2>
+            <img src="{% static 'img/tismart.png' %}" class="rounded mx-auto d-block img-fluid w-25" alt="...">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

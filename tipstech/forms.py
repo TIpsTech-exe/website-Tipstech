@@ -1,8 +1,8 @@
 from django import forms
-from .models import Dicas
+from .models import Comentarios
 
-class adicionarDica(forms.ModelForm):
+class adicionarComentario(forms.ModelForm):
     class Meta:
-        model = Dicas
-        fields = ['titulo', 'descricao']   
+        model = Comentarios
+        fields = ['nome', 'comentado']   
     

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+<style>
+    .underlineLinksNoticias {
+         text-decoration: underline 5px #0066FF;  
+        }
+</style>
+<div class="bg-black p-1 mt-3 mb-3 text-white play-regular text-center">
+  <p class="h1">Noticias da Tecnologia</p>
+</div>
+<div class="container pt-3 justify-content-center align-items-center">
+  
+  {% for noticia in noticias %}
+  <div class="container">
+  <div class="card mb-3 bloco">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"> {{ noticia.titulo }}</h5>
+          <small class="text-muted">
+            {{ noticia.data }}
+          </small>
+          <div class="card-text mt-2 img-fluid" style="max-width: 100%;">
+
+            {{ noticia.resumo|safe|truncatewords:100 }}
+
+          </div>
+          <a href="{{ noticia.link }}"
+          target="_blank"
+          class="btn btn-primary">
+           Ler notícia
+         </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endfor %}
+</div>
+</div>
+{% endblock %}
