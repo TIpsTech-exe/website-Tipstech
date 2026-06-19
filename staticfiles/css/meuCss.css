@@ -1,0 +1,54 @@
+.menuLinkCorProjetos {
+    color: rgb(52, 199, 89);
+}
+.menuLinkCorProjetos:hover {
+    color: rgb(23, 138, 52);
+    text-decoration: underline 5px rgb(23, 138, 52);  
+}
+.bg-grandiente {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(54, 168, 84, 1) 100%);
+}
+
+.corWhats {
+  background-color: #25d366 !important;
+}
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+  }
+  .play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  #imagem-whatsapp {
+    width: 100%;
+    max-width: 200px;
+}
+.comentarios-container {
+  display: flex;
+  gap: 10px; /* espaço entre as divs */
+}
+
+.box-comentario {
+  width: 200px;
+  height: 100px;
+  background: #0066ff;
+  color: white;
+}
+@media (max-width: 991px) {
+    #imagem-whatsapp {
+        width: 100px;
+    }
+}
+  
